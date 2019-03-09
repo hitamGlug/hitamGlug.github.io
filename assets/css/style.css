@@ -1,0 +1,26 @@
+body {
+    /* font-family: 'Zilla Slab', serif; */
+    font-family: "Zilla Slab", "Open Sans", X-LocaleSpecific, sans-serif;
+    background: rgb(0, 0, 0);
+    color: #fff;
+}
+
+.navbar {
+    background: transparent;
+}
+
+.logo {
+    font-weight: 700;
+    color: #fff !important;
+    text-align: center;
+}
+
+.center-jumbotron {
+    height: 100vh !important;
+    
+}
+
+.center-jumbotron .logo {
+    margin-top: 13%;
+    font-size: 100px;
+}
