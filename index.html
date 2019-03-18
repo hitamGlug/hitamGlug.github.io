@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="assets/css/protocol.css">
     <link rel="stylesheet" href="assets/css/protocol-extra.css">
     <link rel="stylesheet" type="text/css" media="screen" href="assets/css/style.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/util.css">
 
     <!-- <script src="main.js"></script> -->
 </head>
@@ -39,35 +40,52 @@
         <div class="section-2">
             <h3>Topics & Agenda</h3>
             <hr>
-            <h5>Topics to be covered</h5>
-            <p>
-                <ul class="mzp-u-list-styled">
-                    <li>
-                        <h6>PWA</h6>
-                        <p>some pwa</p>
-                    </li>
-                    <li>
-                        <h6>Addons</h6>
-                        <p>some addons</p>
-                    </li>
-                    <li>
-                        <h6>Some shit</h6>
-                        <p>shit too</p>
-                    </li>
-                    <li>
-                        <h6>so on</h6>
-                        <p>and on and on..</p>
-                    </li>
-                    <li>
-                        <h6>lol</h6>
-                        <p>lolll</p>
-                    </li>
-                </ul>
-            </p>
+
+            <div class="container p-t-15">
+
+
+                <div class="row p-b-30">
+                    <div class="col-lg-4">
+                        <img src="assets/images/pwa-reliable.png" class="topic-image" alt="pwa-image">
+                    </div>
+                    <div class="col-lg-8">
+                        <div>
+                            <h4>Progressive Web App</h4>
+                            <p>Progressive Web Apps are experiences that combine the best of the web and the best of apps. They are useful to users from the very first visit in a browser tab, no install required. As the user progressively builds a relationship with the app over time, it becomes more and more powerful. It loads quickly, even on flaky networks, sends relevant push notifications, has an icon on the home screen, and loads as a top-level, full screen experience.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-lg-7">
+                        <div>
+                            <h4>Addons for Mozilla firefox</h4>
+                            <p>Add-ons let you add bells & whistles to Firefox. You can get add-ons that compare prices, check the weather, change the look of Firefox, listen to music, or even update your Facebook profile. Learn how to create an Addon for mozilla.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-5">
+                        <img src="assets/images/addons.png" class="topic-image" alt="pwa-image">
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-lg-6">
+                        <img src="assets/images/open-source.png" class="topic-image" alt="pwa-image">
+                    </div>
+                    <div class="col-lg-6">
+                        <div>
+                            <h4>Introduction to Open source Projects</h4>
+                            <p>The open source community provides a great opportunity for aspiring programmers to distinguish themselves; and by contributing to various projects, developers can improve their skills and get inspiration and support from like-minded people. But most importantly, they can prove that they can build fantastic experiences that people love.</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
             <p></p>
             <h3>Speakers & Organisers</h3>
             <hr>
-            <h3>Register</h3>           
+            <h3>Register</h3>
             <div>
                 <p>*This event is completely free to attend!</p>
                 &nbsp;&nbsp;
@@ -203,7 +221,7 @@
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.9"></script>
     <script>
         var options = {
-            strings: ["", "Event on {Topics}.", "@{college}","On {Date} @{time}"],
+            strings: ["", "Event on {Topics}.", "@{college}", "On {Date} @{time}"],
             typeSpeed: 60,
             smartBackspace: true,
             loop: true,

@@ -34,10 +34,11 @@ body {
     font-family: "Zilla Slab", "Open Sans", X-LocaleSpecific, sans-serif;
 }
 
-.footer-logo{
+.footer-logo {
     display: inline;
 }
-.footer-logo .logo{
+
+.footer-logo .logo {
     display: inline;
     font-size: 25px;
     color: rgb(0, 0, 0) !important;
@@ -111,6 +112,13 @@ body {
 .mzp-c-footer-primary-logo a {
     background: white !important;
     color: #000 !important;
+}
+
+.topic-image {
+    max-width: 350px;
+    max-height: 250px;
+    height: auto;
+    width: 100%;
 }
 
 @media only screen and (max-width: 769px) {
