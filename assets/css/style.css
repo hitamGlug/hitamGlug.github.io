@@ -121,6 +121,56 @@ body {
     width: 100%;
 }
 
+.speaker-dp {
+    max-height: 180px;
+    max-width: 135px;
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+}
+
+.speaker-name {
+    font-size: 20px;
+    font-weight: bold;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+}
+
+.speaker-topic {
+    padding-top: 0px;
+    margin-top: 0px;
+    font-size: 14px;
+    font-style: italic;
+}
+
+.speaker-about {
+    font-size: 14px;
+    font-weight: 300;
+    max-width: 200px;
+    width: 100px;
+}
+
+.git-links {
+    font-weight: 400;
+    font-size: 14px;
+}
+
+.speaker-contact {
+    font-weight: 400;
+    font-size: 14px;
+}
+
+.mzp-c-footer-license {
+    font-size: 12px;
+}
+
+.hitam-glug-logo {
+    border-radius: 43%;
+    max-width: 350px;
+}
+
 @media only screen and (max-width: 769px) {
     .center-jumbotron {
         height: 90vh !important;
@@ -134,5 +184,8 @@ body {
     }
     .center-jumbotron .logo p {
         font-size: 1.32em !important;
+    }
+    .speaker-info-block {
+        text-align: center !important;
     }
 }
