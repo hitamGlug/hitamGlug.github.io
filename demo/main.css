@@ -1,0 +1,72 @@
+.navbar {
+    background: transparent;
+    box-shadow: none;
+}
+
+.scrolled {
+    background: #e4ef2f;
+    box-shadow: 2px;
+    transition: 0.5s ease;
+}
+
+.slide-center-out 
+{
+text-decoration:none;
+display: inline-block;
+color:blue;
+}
+/* add a empty string after the elment with class .slide-center-out  */
+.slide-center-out:after 
+{
+content: '';
+display: block;
+height: 1px;
+width: 0;
+background: transparent;
+transition: width .5s ease, background-color .5s ease;
+-webkit-transition: width .5s ease, background-color .5s ease;
+-moz-transition: width .5s ease, background-color .5s ease;
+ margin:auto; /* center the cotent so it will sliding from the midddle to the left and right */
+}
+/* Change the width and background on hover, aka sliding from the middle to the left and right */
+.slide-center-out:hover:after 
+{
+width: 100%;
+background: #428aff;
+}
+
+/* For sliding on scroll */
+.slideanim {visibility:hidden;}
+.slide {
+  /* The name of the animation */
+  animation-name: slide;
+  -webkit-animation-name: slide;
+  /* The duration of the animation */
+  animation-duration: 1s;
+  -webkit-animation-duration: 1s;
+  /* Make the element visible */
+  visibility: visible;
+}
+
+/* Go from 0% to 100% opacity (see-through) and specify the percentage from when to slide in the element along the Y-axis */
+@keyframes slide {
+  0% {
+    opacity: 0;
+    transform: translateY(70%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+}
+@-webkit-keyframes slide {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(70%);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0%);
+  }
+}
+
