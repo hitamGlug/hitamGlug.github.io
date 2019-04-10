@@ -1,12 +1,24 @@
 .navbar {
-    background: transparent;
-    box-shadow: none;
+  background: transparent;
+  box-shadow: none;
+}
+.nav-item a{
+  font-family: Yatra One;
+  font-size: 20px;
+  margin-right: 8px;
+  margin-left: 8px;
+}
+.navbar-brand img {
+  display: none;
 }
 
 .scrolled {
-    background: #e4ef2f;
-    box-shadow: 2px;
-    transition: 0.5s ease;
+  background: #428aff;
+  box-shadow: 2px;
+  transition: 0.5s ease;
+}
+.scrolled img{
+  display: block;
 }
 
 .slide-center-out 
@@ -20,7 +32,7 @@ color:blue;
 {
 content: '';
 display: block;
-height: 1px;
+height: 1px;  
 width: 0;
 background: transparent;
 transition: width .5s ease, background-color .5s ease;
@@ -32,7 +44,7 @@ transition: width .5s ease, background-color .5s ease;
 .slide-center-out:hover:after 
 {
 width: 100%;
-background: #428aff;
+background: white;
 }
 
 /* For sliding on scroll */
@@ -70,3 +82,11 @@ background: #428aff;
   }
 }
 
+h1, h2 {
+  font-family: 'Press Start 2P', cursive;
+}
+
+#title {  /*Add any background image of your choice*/
+  background: url(https://image.freepik.com/free-photo/bubble-bokeh-abstract-background-with-dark-blue-color_60949-138.jpg);
+  background-size: 100%;
+}
