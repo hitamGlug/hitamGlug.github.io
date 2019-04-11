@@ -2,6 +2,9 @@
   background: transparent;
   box-shadow: none;
 }
+.navbar-brand {
+  border-radius: 10px;
+}
 .nav-item a{
   font-family: Yatra One;
   font-size: 20px;
@@ -10,6 +13,14 @@
 }
 .navbar-brand img {
   display: none;
+}
+#hg-bigpic {
+  margin-right: 0;
+}
+#hg-title {
+  margin-top: 35%;
+  color: white;
+  font-size: 45px;
 }
 
 .scrolled {
@@ -89,4 +100,45 @@ h1, h2 {
 #title {  /*Add any background image of your choice*/
   background: url(https://image.freepik.com/free-photo/bubble-bokeh-abstract-background-with-dark-blue-color_60949-138.jpg);
   background-size: 100%;
+}
+
+#mobileNav {
+  display: none;
+}
+#mobileNavMenu {
+  display: none;
+  background: black;
+  text-align: center;
+  top: 40px;
+  border-radius: 10px;
+}
+#minNav {
+  display: none;
+}
+
+
+/* Media queries */
+@media screen and (max-width:600px) {
+  .navbar-brand {
+    border-radius: 10px;
+  }
+  #mobileNav, #minNav {
+    display: block;
+  }
+  #title ul, #pcNav {
+    display: none;
+  }
+  #hg-bigpic {
+    margin-top: 20px;
+    margin-left: 20%;
+    margin-bottom: -50px;
+  }
+  #hg-title {
+    font-size: 20px;
+    margin-left: 15%;
+  }
+  #title {
+    background-size: 180%;
+    z-index: 1;
+  }
 }

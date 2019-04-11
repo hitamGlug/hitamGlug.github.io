@@ -1,6 +1,6 @@
 $(document).ready(function(){
     $(window).scroll(function(){
-        $("nav").toggleClass("scrolled", $(this).scrollTop() > 740);
+        $("#pcNav").toggleClass("scrolled", $(this).scrollTop() > 740);
         $(".slideanim").each(function(){
             var pos = $(this).offset().top;
         
@@ -32,5 +32,15 @@ $(document).ready(function(){
     });
     $("#hg-bigpic").hover(function(){
         $("#hg-bigpic").toggleClass("animated jello");
+    });
+});
+
+// Mobile
+$(document).ready(function(){
+    $(window).scroll(function(){
+        $("#minNav").toggleClass("scrolled", $(this).scrollTop() > 280);
+    });
+    $("#navMenuBtn").click(function(){
+        $("#mobileNavMenu").slideToggle(500);
     });
 });
