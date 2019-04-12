@@ -1,0 +1,8 @@
+#87CEEB blue
+#3aafa9 blue-background
+#0f292f dark-blue
+#FF3800 orange
+#ebefee white
+
+https://visme.co/blog/website-color-schemes/
+4,12,17,24,27,29,40,48
