@@ -1,0 +1,139 @@
+body {
+  background: #181919;
+}
+
+.navbar {
+  background: #181919;
+  box-shadow: none;
+  border-bottom: 2px solid  #2a2b2b;
+}
+.navbar-brand {
+  border-radius: 30px;
+  margin-left: 10%;
+}
+.nav-item a{
+  font-family: 'B612 Mono';
+  font-size: 16px;
+  margin-right: 4px;
+  margin-left: 4px;
+}
+.nav-slash{
+  font-family: 'B612 Mono';
+  font-size: 20px;
+  color: white;
+  margin-top: 1%;
+}
+
+
+.scrolled {
+  background: #181919; /* blue navbar #428aff;*/
+  box-shadow: 2px;
+  transition: 0.5s ease;
+}
+
+.slide-center-out 
+{
+text-decoration:none;
+display: inline-block;
+color:blue;
+}
+/* add a empty string after the elment with class .slide-center-out  */
+.slide-center-out:after 
+{
+content: '';
+display: block;
+height: 1px;  
+width: 0;
+background: transparent;
+transition: width .5s ease, background-color .5s ease;
+-webkit-transition: width .5s ease, background-color .5s ease;
+-moz-transition: width .5s ease, background-color .5s ease;
+ margin:auto; /* center the cotent so it will sliding from the midddle to the left and right */
+}
+/* Change the width and background on hover, aka sliding from the middle to the left and right */
+.slide-center-out:hover:after 
+{
+width: 100%;
+background: white;
+}
+
+/* For sliding on scroll */
+.slideanim {visibility:hidden;}
+.slide {
+  /* The name of the animation */
+  animation-name: slide;
+  -webkit-animation-name: slide;
+  /* The duration of the animation */
+  animation-duration: 1s;
+  -webkit-animation-duration: 1s;
+  /* Make the element visible */
+  visibility: visible;
+}
+
+/* Go from 0% to 100% opacity (see-through) and specify the percentage from when to slide in the element along the Y-axis */
+@keyframes slide {
+  0% {
+    opacity: 0;
+    transform: translateY(70%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+}
+@-webkit-keyframes slide {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(70%);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0%);
+  }
+}
+
+h1, h2 {
+  font-family: 'B612 Mono', cursive;
+  color: white;
+}
+
+#mobileNav {
+  display: none;
+}
+#mobileNavMenu {
+  display: none;
+  background: black;
+  text-align: center;
+  top: 40px;
+  border-radius: 10px;
+}
+#minNav {
+  display: none;
+}
+
+
+/* Media queries */
+@media screen and (max-width:600px) {
+  .navbar-brand {
+    border-radius: 10px;
+  }
+  #mobileNav, #minNav {
+    display: block;
+  }
+  #title ul, #pcNav {
+    display: none;
+  }
+  #hg-bigpic {
+    margin-top: 20px;
+    margin-left: 20%;
+    margin-bottom: -50px;
+  }
+  #hg-title {
+    font-size: 20px;
+    margin-left: 15%;
+  }
+  #title {
+    background-size: 180%;
+    z-index: 1;
+  }
+}
